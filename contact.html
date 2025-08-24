@@ -8,25 +8,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body { font-family: Arial, sans-serif; color: #000; background: #fff; }
+        .container-fluid { display: flex; height: 100vh; }
+        .sidebar { width: 200px; background: #ff0000; color: #fff; padding: 20px; text-align: center; }
+        .sidebar .btn { background: #000; color: #fff; margin-bottom: 10px; width: 100%; }
+        .sidebar .btn:hover { background: #333; }
+        .content { flex: 1; padding: 40px; }
+        .hero { background: linear-gradient(to bottom, #ff0000, #000000); color: #fff; text-align: center; padding: 60px 20px; }
         table { width: 100%; }
         td { padding: 20px; vertical-align: top; }
         iframe { width: 100%; height: 600px; border: none; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <table>
-            <tr>
-                <td>
-                    <h2>Contact Info</h2>
-                    <p>Phone: +1-647-295-0500</p>
-                    <p>Email: alleventspb@gmail.com</p>
-                </td>
-                <td>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdKjYcojlibCLpzB-6-tIHVN-K6oRZmTQ5uVL_WpTHEDnyRvw/viewform?embedded=true"></iframe>
-                </td>
-            </tr>
-        </table>
+    <div class="container-fluid">
+        <div class="sidebar">
+            <a href="index.html" class="btn">Home</a>
+            <a href="services.html" class="btn">Services</a>
+            <a href="pricing.html" class="btn">Pricing</a>
+        </div>
+        <div class="content">
+            <div class="hero">
+                <img src="allevents_logo.png" alt="Logo" class="logo">
+                <h1>Contact Us</h1>
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <h2>Contact Info</h2>
+                        <p>Phone: +1-647-295-0500</p>
+                        <p>Email: alleventspb@gmail.com</p>
+                    </td>
+                    <td>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdKjYcojlibCLpzB-6-tIHVN-K6oRZmTQ5uVL_WpTHEDnyRvw/viewform?embedded=true"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
